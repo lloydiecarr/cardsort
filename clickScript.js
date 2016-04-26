@@ -13,7 +13,7 @@ $(document).ready(function(){
 		if (clicks <= items.length - 1){
 		var result = items[clicks];
 			$("#card").text(result);
-			$("#chosen").append(result + '<hr />');
+			$("#chosen").append('<p>' + result + '</p><hr />');
 				} else {
 					$("#card").text("You are finished");
 				}
