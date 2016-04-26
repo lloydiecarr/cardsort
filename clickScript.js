@@ -9,30 +9,27 @@ $(document).ready(function(){
 	
 	$("#btn-yes").click(function(){
 		clicks++;
-		console.log("click");
+		var chosen = Math.floor(clicks - 1);
+		
 		if (clicks <= items.length - 1){
-		var result = items[clicks];
-			$("#card").text(result);
-			$("#chosen").append('<p>' + result + '</p><hr />');
-				} else {
-					$("#card").text("You are finished");
-				}
+			var result = items[chosen];
+				$("#card").text(result);
+				$("#chosen").append('<p>' + result + '</p><hr />');
+					} else {
+						$("#card").text("You are finished");
+			}
 		});
 		
 	$("#btn-no").click(function(){
 		clicks++;
+		
 		if (clicks <= items.length - 1){
-		var result = items[clicks];
-			$("#card").text(result);
-				} else {
-					$("#card").text("You are finished");
-				}
+			var result = items[clicks];
+				$("#card").text(result);
+					} else {
+						$("#card").text("You are finished");
+			}
 		});
 	});
 		
 }); 
-
-/* function triggerMe(n){
-		console.log("clicked" + n);
-	} */
-
