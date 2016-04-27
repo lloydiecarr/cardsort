@@ -21,18 +21,15 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #e8eae2;
+	background-color: #edf4d7;
 }
 
 .focus-text {
 	font-family: 'Economica', sans-serif;
 	font-size: 3em;
+	margin: 40% auto;
 }
 
-.focus-test p {
-	margin: 25% auto;
-}
-	
 .wrapper {
 	padding: 15px;
 	height: 100%;
@@ -45,6 +42,11 @@ html, body {
 .controls {
 	text-align: center;
 	padding: 5px;
+}
+
+.pull-right {
+	text-align: right;
+	float: right;
 }
 
 hr {
@@ -80,8 +82,8 @@ hr {
 
 .btn-success {
     color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+    background-color: #a6b96b;
+    border-color: #a6b96b;
 }
 
 </style>
@@ -90,6 +92,8 @@ hr {
 
 <body>
 <div class="wrapper">
+		<p>Count:&nbsp <span id="count">err</span></p>
+		<hr />
 		<p class="focus-text" id="card">None</p>
 	<div class="controls">
 		<button class="btn btn-default" id="btn-no" style="margin-right: 10px">DISAGREE</button>
