@@ -27,6 +27,9 @@
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+	<!-- <preference name="SplashScreen" value="screen" /> -->
+	<preference name="SplashScreenDelay" value="2000" />
+	<preference name="splash-screen-duration" value="3000" />
 
     <!--
         Define a specific version of PhoneGap to build into your app.
@@ -53,6 +56,8 @@
 
 
     <!-- Define app splash screen for each platform. -->
+	
+	<gap:splash src="splash.png" />
     <gap:splash src="screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
