@@ -3,6 +3,8 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
+		android:id = "@+id/toolbar_show_addresses_simple"
+        style = "@style/Theme.NoTitleBar" >
         id        = "com.lloydiecarr.ProductReactionCard"
         version   = "1.0.0">
 
@@ -37,9 +39,10 @@
     -->
 	
 	<!-- No title bar work around -->
-	<gap:config-file platform="android" parent="/manifest">
+	<!-- <gap:config-file platform="android" parent="/manifest">
 		<application android:theme="@android:style/Theme.NoTitleBar"></application>
-	</gap:config-file>
+	</gap:config-file> -->
+
 
 
     <!-- Plugins -->
