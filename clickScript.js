@@ -10,7 +10,7 @@ $(document).ready(function(){
 	//display first word
 	$("#card").text('"' + items[0] + '"');
 	//Add 1 to on screen counter (array 0 is fist character)
-	$("#count").text(clicks + 1);
+	$("#count").text(clicks);
 	
 	//detect click
 	$("#btn-yes").click(function(){
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		//update chosen list & on screen counter
 		if (clicks <= items.length - 1){
 			var result = items[chosen];
-				$("#count").text(clicks + 1);
+				$("#count").text(clicks);
 				$("#chosen").append('<p>' + result + '</p><hr />');
 					} else {
 				//if there are no more words
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		
 		if (clicks <= items.length - 1){
 			var result = items[clicks];
-				$("#count").text(clicks + 1);
+				$("#count").text(clicks);
 				$("#card").text('"' + result + '"');
 					} else {
 				$("#card").text("You are finished");

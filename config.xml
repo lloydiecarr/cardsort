@@ -35,6 +35,12 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
+	
+	<!-- No title bar work around -->
+	<gap:config-file platform="android" parent="/manifest">
+		<application android:theme="@android:style/Theme.NoTitleBar"></application>
+	</gap:config-file>
+
 
     <!-- Plugins -->
 
